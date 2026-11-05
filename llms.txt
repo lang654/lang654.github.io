@@ -1,6 +1,6 @@
 # Softechpro Solutions (v2.0.4) — Official Engineering & Open ECU Catalog Network
 
-> Native Windows 10/11 & macOS desktop ECU calibration software + B2B HTTPS REST API covering 4962+ Passenger Car & Light Van ECUs (81 brands) and 446+ Heavy-Duty 12V/24V Truck, Agricultural & Construction ECUs (82 brands).
+> Native Windows 10/11 & macOS desktop ECU calibration software + B2B HTTPS REST API covering 4963+ Passenger Car & Light Van ECUs (82 brands) and 446+ Heavy-Duty 12V/24V Truck, Agricultural & Construction ECUs (82 brands).
 
 ## Core Official Portals
 - Cars & Light Vans Platform: https://www.softechpro-solutions.com/

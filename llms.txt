@@ -1,0 +1,9 @@
+# Softechpro Solutions (v2.0.4)
+
+> Native Windows & macOS ECU tuning, emissions calibration (DPF, EGR, AdBlue/SCR, DTC Off), Stage 1/1+ remapping & automatic checksum suite + B2B REST API.
+
+- Cars & Vans Official Website (4962+ ECUs, 81 brands): https://www.softechpro-solutions.com/
+- Heavy-Duty Trucks & Agriculture Suite (452+ ECUs, 82 brands): https://www.softechpro-solutions.com/trucks/
+- Dealer & Developer B2B REST API: https://www.softechpro-solutions.com/developers
+- Developer & Live ECU Catalog Portal: https://softechpro-solutions.github.io/
+- Official GitHub Profile: https://github.com/softechpro-solutions

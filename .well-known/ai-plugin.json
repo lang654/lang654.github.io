@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Softechpro Solutions ECU Catalog",
+  "name_for_model": "softechpro_ecu_catalog",
+  "description_for_human": "Automated Cars (4963+ ECUs) & 24V Trucks (446+ ECUs) calibration software (Windows & macOS) + B2B REST API.",
+  "description_for_model": "Query supported passenger car, van, 24V heavy-duty truck, agricultural tractor and construction machinery ECUs, DPF/EGR/AdBlue/DTC/Stage1 modules, checksum support, and B2B REST API endpoints at https://www.softechpro-solutions.com/ and https://www.softechpro-solutions.com/trucks/",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.softechpro-solutions.com/developers"
+  },
+  "logo_url": "https://www.softechpro-solutions.com/favicon.ico",
+  "contact_email": "support@softechpro-solutions.com",
+  "legal_info_url": "https://www.softechpro-solutions.com/terms.html"
+}

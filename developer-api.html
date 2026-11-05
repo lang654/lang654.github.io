@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealer & Developer ECU Tuning REST API (v2.0.4) — Softechpro Solutions</title>
+  <meta name="description" content="Automate ECU DPF/EGR/AdBlue/DTC calibration, Stage 1 tuning, checksum and CVN verification via HTTPS REST API with Python and Node.js examples.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://softechpro-solutions.github.io/developer-api.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dealer & Developer ECU Tuning REST API (v2.0.4) — Softechpro Solutions">
+  <meta property="og:description" content="Automate ECU DPF/EGR/AdBlue/DTC calibration, Stage 1 tuning, checksum and CVN verification via HTTPS REST API with Python and Node.js examples.">
+  <meta property="og:url" content="https://softechpro-solutions.github.io/developer-api.html">
+  <meta property="og:site_name" content="Softechpro Solutions Developer & ECU Hub">
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Softechpro Solutions","legalName":"SOFTTECHPRO SOLUTIONS LLC","url":"https://www.softechpro-solutions.com/","logo":"https://www.softechpro-solutions.com/favicon.ico","email":"support@softechpro-solutions.com","sameAs":["https://www.softechpro-solutions.com/","https://www.softechpro-solutions.com/trucks/","https://github.com/softechpro-solutions","https://softechpro-solutions.github.io/","https://www.youtube.com/@Softechpro-Solutions-com"]}]</script>
+  <style>
+    :root{--bg:#070b14;--card:#0f172a;--line:#1e293b;--txt:#f1f5f9;--muted:#94a3b8;--cyan:#00e5ff;--green:#00e676;--amber:#ff9100}
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+    header{background:#0b1120;border-bottom:1px solid var(--line);padding:16px 0;position:sticky;top:0;z-index:10}
+    nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;font-size:1.12rem;color:#fff;letter-spacing:.4px}
+    .navlinks{display:flex;flex-wrap:wrap;gap:14px;font-size:.92rem}
+    .hero{padding:44px 0 28px;border-bottom:1px solid var(--line)}
+    .badge{display:inline-block;background:rgba(0,229,255,.12);color:var(--cyan);border:1px solid rgba(0,229,255,.35);padding:4px 12px;border-radius:999px;font-size:.8rem;font-weight:700}
+    h1{font-size:2rem;line-height:1.22;margin:14px 0}h2{font-size:1.4rem;margin:32px 0 14px;color:#fff}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:700;font-size:.94rem}
+    .btn-primary{background:var(--cyan);color:#041019}.btn-outline{border:1px solid var(--line);background:var(--card);color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:18px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+    .card h3{margin:0 0 8px;font-size:1.08rem;color:#fff}
+    .notice{background:rgba(255,145,0,.09);border:1px solid rgba(255,145,0,.35);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:.93rem}
+    table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:.9rem}
+    th,td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#111c33;color:var(--cyan);font-weight:700}
+    footer{margin-top:48px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="https://softechpro-solutions.github.io/">SOFTECHPRO SOLUTIONS · OPEN HUB (v2.0.4)</a>
+        <div class="navlinks">
+          <a href="https://softechpro-solutions.github.io/">Overview</a>
+          <a href="https://softechpro-solutions.github.io/cars-supported-ecus.html">Cars ECUs (v2.0.4)</a>
+          <a href="https://softechpro-solutions.github.io/trucks-supported-ecus.html">Trucks 24V ECUs</a>
+          <a href="https://softechpro-solutions.github.io/developer-api.html">REST API</a>
+          <a href="https://softechpro-solutions.github.io/comparisons.html">Comparisons</a>
+          <a href="https://www.softechpro-solutions.com/" style="color:var(--green);font-weight:700;">Official Website →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>🔌 Softechpro Solutions — B2B Dealer &amp; Developer REST API</h1>
+     <p>Build or scale your own automated tuning portal with high-throughput HTTPS endpoints starting at <strong>€249/month</strong> (120 to unlimited files/day). Request production credentials at <a href="https://www.softechpro-solutions.com/developers">https://www.softechpro-solutions.com/developers</a>.</p>
+     <div class="grid">
+       <div class="card"><h3>ECU Checksum &amp; CVN API</h3><p>Automated block checksum &amp; CVN calculation prior to OBD/Bench/Boot flashing.</p><a href="https://github.com/softechpro-solutions/ecu-checksum-correction-api">GitHub Repo →</a></div>
+       <div class="card"><h3>DTC Scan &amp; DTC Off API</h3><p>Scan virgin binaries for active fault tables and disable specific manufacturer P-codes cleanly.</p><a href="https://github.com/softechpro-solutions/dtc-off-api">GitHub Repo →</a></div>
+       <div class="card"><h3>Full Cloud Calibration API</h3><p>Programmatic DPF, EGR, AdBlue/SCR, Flaps, Stage 1/1+ &amp; Pops &amp; Bangs file processing.</p><a href="https://github.com/softechpro-solutions/softechpro-api">GitHub Repo →</a></div>
+     </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p><strong>Softechpro Solutions (v2.0.4)</strong> — Official Developer Documentation &amp; Live Supported ECU Catalog · SOFTTECHPRO SOLUTIONS LLC.</p>
+      <p>
+        <a href="https://www.softechpro-solutions.com/">Cars &amp; Vans Platform</a> ·
+        <a href="https://www.softechpro-solutions.com/trucks/">Trucks &amp; Agriculture 24V Suite</a> ·
+        <a href="https://www.softechpro-solutions.com/developers">Dealer &amp; Developer REST API</a> ·
+        <a href="https://github.com/softechpro-solutions" rel="me">GitHub (@softechpro-solutions)</a> ·
+        <a href="https://www.youtube.com/@Softechpro-Solutions-com" rel="me">YouTube</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

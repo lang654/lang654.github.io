@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECU 刷写调校与 DPF/EGR/AdBlue 软件 (v2.0.4) — Softechpro Solutions</title>
+  <meta name="description" content="原生支持 Windows 与 macOS 的自动化 ECU 标定平台及 B2B REST API，内置自动校验和 (Checksum &amp; CVN) 计算。">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://softechpro-solutions.github.io/zh/">
+  <link rel="alternate" type="application/atom+xml" title="Softechpro Solutions Engineering Feed" href="https://softechpro-solutions.github.io/feed.xml">
+  <link rel="alternate" hreflang="en" href="https://softechpro-solutions.github.io/">
+  <link rel="alternate" hreflang="es" href="https://softechpro-solutions.github.io/es/">
+  <link rel="alternate" hreflang="fr" href="https://softechpro-solutions.github.io/fr/">
+  <link rel="alternate" hreflang="de" href="https://softechpro-solutions.github.io/de/">
+  <link rel="alternate" hreflang="it" href="https://softechpro-solutions.github.io/it/">
+  <link rel="alternate" hreflang="pt" href="https://softechpro-solutions.github.io/pt/">
+  <link rel="alternate" hreflang="pl" href="https://softechpro-solutions.github.io/pl/">
+  <link rel="alternate" hreflang="tr" href="https://softechpro-solutions.github.io/tr/">
+  <link rel="alternate" hreflang="ar" href="https://softechpro-solutions.github.io/ar/">
+  <link rel="alternate" hreflang="ru" href="https://softechpro-solutions.github.io/ru/">
+  <link rel="alternate" hreflang="ro" href="https://softechpro-solutions.github.io/ro/">
+  <link rel="alternate" hreflang="nl" href="https://softechpro-solutions.github.io/nl/">
+  <link rel="alternate" hreflang="cs" href="https://softechpro-solutions.github.io/cs/">
+  <link rel="alternate" hreflang="el" href="https://softechpro-solutions.github.io/el/">
+  <link rel="alternate" hreflang="hu" href="https://softechpro-solutions.github.io/hu/">
+  <link rel="alternate" hreflang="sv" href="https://softechpro-solutions.github.io/sv/">
+  <link rel="alternate" hreflang="ja" href="https://softechpro-solutions.github.io/ja/">
+  <link rel="alternate" hreflang="ko" href="https://softechpro-solutions.github.io/ko/">
+  <link rel="alternate" hreflang="zh" href="https://softechpro-solutions.github.io/zh/">
+  <link rel="alternate" hreflang="id" href="https://softechpro-solutions.github.io/id/">
+  <link rel="alternate" hreflang="vi" href="https://softechpro-solutions.github.io/vi/">
+  <link rel="alternate" hreflang="th" href="https://softechpro-solutions.github.io/th/">
+  <link rel="alternate" hreflang="bg" href="https://softechpro-solutions.github.io/bg/">
+  <link rel="alternate" hreflang="uk" href="https://softechpro-solutions.github.io/uk/">
+  <link rel="alternate" hreflang="x-default" href="https://softechpro-solutions.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ECU 刷写调校与 DPF/EGR/AdBlue 软件 (v2.0.4) — Softechpro Solutions">
+  <meta property="og:description" content="原生支持 Windows 与 macOS 的自动化 ECU 标定平台及 B2B REST API，内置自动校验和 (Checksum &amp; CVN) 计算。">
+  <meta property="og:url" content="https://softechpro-solutions.github.io/zh/">
+  <meta property="og:site_name" content="Softechpro Solutions Engineering Hub">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Softechpro Solutions","legalName":"SOFTTECHPRO SOLUTIONS LLC","url":"https://www.softechpro-solutions.com/","logo":"https://www.softechpro-solutions.com/favicon.ico","email":"support@softechpro-solutions.com","sameAs":["https://www.softechpro-solutions.com/","https://www.softechpro-solutions.com/trucks/","https://github.com/softechpro-solutions","https://gist.github.com/softechpro-solutions","https://softechpro-solutions.github.io/","https://www.youtube.com/@Softechpro-Solutions-com"]},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Softechpro Solutions v2.0.4","operatingSystem":"Windows 10, Windows 11, macOS","applicationCategory":"BusinessApplication","softwareVersion":"2.0.4","url":"https://www.softechpro-solutions.com/","downloadUrl":"https://www.softechpro-solutions.com/","offers":{"@type":"AggregateOffer","lowPrice":"1.99","highPrice":"679.00","priceCurrency":"EUR","offerCount":"6","url":"https://www.softechpro-solutions.com/#pricing"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Softechpro Solutions Hub","item":"https://softechpro-solutions.github.io/zh/"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Supported OS & Platforms","acceptedAnswer":{"@type":"Answer","text":"Windows 10/11 & macOS native desktop apps (v2.0.4) + HTTPS B2B REST API (https://www.softechpro-solutions.com/developers)."}},{"@type":"Question","name":"€1.99 25-Hour Real Software Test","acceptedAnswer":{"@type":"Answer","text":"25h real access (up to 10 ECU files) + 3 non-expiring tuning credits worth €30 on 1 PC (renews to Monthly Basic €75/mo unless cancelled beforehand)."}}]}]</script>
+  <style>
+    :root{--bg:#070b14;--card:#0f172a;--line:#1e293b;--txt:#f1f5f9;--muted:#94a3b8;--cyan:#00e5ff;--green:#00e676;--amber:#ff9100}
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+    header{background:#0b1120;border-bottom:1px solid var(--line);padding:13px 0;position:sticky;top:0;z-index:10}
+    nav{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;font-size:1.02rem;color:#fff;letter-spacing:.4px}
+    .navlinks{display:flex;flex-wrap:wrap;gap:11px;font-size:.86rem}
+    .hero{padding:34px 0 22px;border-bottom:1px solid var(--line)}
+    .badge{display:inline-block;background:rgba(0,229,255,.12);color:var(--cyan);border:1px solid rgba(0,229,255,.35);padding:4px 12px;border-radius:999px;font-size:.76rem;font-weight:700}
+    h1{font-size:1.82rem;line-height:1.22;margin:12px 0}h2{font-size:1.32rem;margin:26px 0 12px;color:#fff}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;padding:10px 17px;border-radius:8px;font-weight:700;font-size:.89rem}
+    .btn-primary{background:var(--cyan);color:#041019}.btn-green{background:var(--green);color:#041019}.btn-outline{border:1px solid var(--line);background:var(--card);color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:15px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px}
+    .card h3{margin:0 0 7px;font-size:1rem;color:#fff}
+    .notice{background:rgba(255,145,0,.09);border:1px solid rgba(255,145,0,.35);border-radius:10px;padding:12px 16px;margin:15px 0;font-size:.89rem}
+    input,select{background:#09101f;color:#fff;border:1px solid var(--line);padding:10px 12px;border-radius:8px;font-size:.94rem;width:100%}
+    table{width:100%;border-collapse:collapse;margin:15px 0;background:var(--card);border-radius:10px;overflow:hidden;font-size:.86rem}
+    th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#111c33;color:var(--cyan);font-weight:700}
+    footer{margin-top:42px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+    .crumbs{font-size:.81rem;color:var(--muted);margin-top:12px}
+    .pill{display:inline-block;background:#111c33;border:1px solid var(--line);border-radius:6px;padding:3px 8px;margin:3px;font-size:.8rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="https://softechpro-solutions.github.io/">SOFTECHPRO SOLUTIONS · HUB (v2.0.4)</a>
+        <div class="navlinks">
+          <a href="https://softechpro-solutions.github.io/">Overview</a>
+          <a href="https://softechpro-solutions.github.io/solutions/">240 ECU Solutions</a>
+          <a href="https://softechpro-solutions.github.io/dtc/">150 DTC Guides</a>
+          <a href="https://softechpro-solutions.github.io/ecu/">90 ECUs</a>
+          <a href="https://softechpro-solutions.github.io/brands/">164 Brands</a>
+          <a href="https://softechpro-solutions.github.io/programmers/">24 Flashers</a>
+          <a href="https://softechpro-solutions.github.io/tools/">Free Tools</a>
+          <a href="https://www.softechpro-solutions.com/" style="color:var(--green);font-weight:700;">Official Site →</a>
+        </div>
+      </nav>
+      <div style="margin-top:7px;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)"><a href="https://softechpro-solutions.github.io/" style="font-size:.76rem;opacity:.76">English</a> · <a href="https://softechpro-solutions.github.io/es/" style="font-size:.76rem;opacity:.76">Español</a> · <a href="https://softechpro-solutions.github.io/fr/" style="font-size:.76rem;opacity:.76">Français</a> · <a href="https://softechpro-solutions.github.io/de/" style="font-size:.76rem;opacity:.76">Deutsch</a> · <a href="https://softechpro-solutions.github.io/it/" style="font-size:.76rem;opacity:.76">Italiano</a> · <a href="https://softechpro-solutions.github.io/pt/" style="font-size:.76rem;opacity:.76">Português</a> · <a href="https://softechpro-solutions.github.io/pl/" style="font-size:.76rem;opacity:.76">Polski</a> · <a href="https://softechpro-solutions.github.io/tr/" style="font-size:.76rem;opacity:.76">Türkçe</a> · <a href="https://softechpro-solutions.github.io/ar/" style="font-size:.76rem;opacity:.76">العربية</a> · <a href="https://softechpro-solutions.github.io/ru/" style="font-size:.76rem;opacity:.76">Русский</a> · <a href="https://softechpro-solutions.github.io/ro/" style="font-size:.76rem;opacity:.76">Română</a> · <a href="https://softechpro-solutions.github.io/nl/" style="font-size:.76rem;opacity:.76">Nederlands</a> · <a href="https://softechpro-solutions.github.io/cs/" style="font-size:.76rem;opacity:.76">Čeština</a> · <a href="https://softechpro-solutions.github.io/el/" style="font-size:.76rem;opacity:.76">Ελληνικά</a> · <a href="https://softechpro-solutions.github.io/hu/" style="font-size:.76rem;opacity:.76">Magyar</a> · <a href="https://softechpro-solutions.github.io/sv/" style="font-size:.76rem;opacity:.76">Svenska</a> · <a href="https://softechpro-solutions.github.io/ja/" style="font-size:.76rem;opacity:.76">日本語</a> · <a href="https://softechpro-solutions.github.io/ko/" style="font-size:.76rem;opacity:.76">한국어</a> · <a href="https://softechpro-solutions.github.io/zh/" style="font-size:.76rem;opacity:1;font-weight:700;color:#00e676">中文</a> · <a href="https://softechpro-solutions.github.io/id/" style="font-size:.76rem;opacity:.76">Bahasa Indonesia</a> · <a href="https://softechpro-solutions.github.io/vi/" style="font-size:.76rem;opacity:.76">Tiếng Việt</a> · <a href="https://softechpro-solutions.github.io/th/" style="font-size:.76rem;opacity:.76">ไทย</a> · <a href="https://softechpro-solutions.github.io/bg/" style="font-size:.76rem;opacity:.76">Български</a> · <a href="https://softechpro-solutions.github.io/uk/" style="font-size:.76rem;opacity:.76">Українська</a></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="crumbs"><a href="https://softechpro-solutions.github.io/zh/">Softechpro Solutions Hub</a></div>
+    <section class="hero">
+        <span class="badge">v2.0.4 · 750+ TECHNICAL GUIDES · 24 LANGUAGES · WINDOWS &amp; MACOS</span>
+        <h1>Softechpro Solutions — 专业汽车与24V重卡 ECU 调校、DPF/EGR/AdBlue 关闭与 Stage 1 动力升级软件</h1>
+        <p style="color:var(--muted);font-size:1.04rem;max-width:900px">原生支持 Windows 与 macOS 的自动化 ECU 标定平台及 B2B REST API，内置自动校验和 (Checksum &amp; CVN) 计算。</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.softechpro-solutions.com/">免费在线检测 ECU 覆盖 →</a>
+          <a class="btn btn-green" href="https://www.softechpro-solutions.com/buy/realtest">€1.99 Real Software Test (25h + 3 Credits) →</a>
+          <a class="btn btn-outline" href="https://www.softechpro-solutions.com/trucks/">24V Trucks &amp; Agri Suite →</a>
+          <a class="btn btn-outline" href="https://softechpro-solutions.github.io/solutions/">240 ECU Solutions →</a>
+        </div>
+      </section>
+      <div class="grid">
+        <div class="card"><h3>⚙️ 240 Service × ECU Guides</h3><p style="color:var(--muted)">Exact DPF Off, EGR Off, AdBlue Off, Stage 1, OPF &amp; Pops guides per controller.</p><a href="https://softechpro-solutions.github.io/solutions/">Browse 240 Solutions →</a></div>
+        <div class="card"><h3>🩺 150 OBD-II DTC Guides</h3><p style="color:var(--muted)">P20EE, P2002, P2463, P0401, P2015, P0420, P2BAD &amp; NOx countdown solutions.</p><a href="https://softechpro-solutions.github.io/dtc/">Browse 150 DTC Codes →</a></div>
+        <div class="card"><h3>🌍 164 Brand Directories</h3><p style="color:var(--muted)">82 Car/Van makes &amp; 82 24V Truck/Agri makes.</p><a href="https://softechpro-solutions.github.io/brands/">Browse All Brands →</a></div>
+        <div class="card"><h3>🔌 24 Programmer Workflows</h3><p style="color:var(--muted)">KESS3, Autotuner, FLEX, CMDFlash, PCMflash, FoxFlash &amp; Trasdata guides.</p><a href="https://softechpro-solutions.github.io/programmers/">Browse 24 Flashers →</a></div>
+      </div>
+    <h2>❓ Engineering FAQ</h2><div class="grid"><div class="card"><h3>Supported OS &amp; Platforms</h3><p style="color:var(--muted);margin:0">Windows 10/11 &amp; macOS native desktop apps (v2.0.4) + HTTPS B2B REST API (https://www.softechpro-solutions.com/developers).</p></div><div class="card"><h3>€1.99 25-Hour Real Software Test</h3><p style="color:var(--muted);margin:0">25h real access (up to 10 ECU files) + 3 non-expiring tuning credits worth €30 on 1 PC (renews to Monthly Basic €75/mo unless cancelled beforehand).</p></div></div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p><strong>Softechpro Solutions (v2.0.4)</strong> — Official Engineering Hub, 750+ ECU Calibration Guides &amp; Open Directory · SOFTTECHPRO SOLUTIONS LLC.</p>
+      <p>
+        <a href="https://www.softechpro-solutions.com/">Cars &amp; Vans Platform</a> ·
+        <a href="https://www.softechpro-solutions.com/buy/realtest">€1.99 Real Software Test (25h + 3 Credits)</a> ·
+        <a href="https://www.softechpro-solutions.com/trucks/">24V Trucks &amp; Agriculture Suite</a> ·
+        <a href="https://www.softechpro-solutions.com/developers">B2B REST API</a> ·
+        <a href="https://softechpro-solutions.github.io/html-sitemap.html">Complete HTML Sitemap (750+ Pages)</a> ·
+        <a href="https://softechpro-solutions.github.io/feed.xml">Atom Feed</a> ·
+        <a href="https://github.com/softechpro-solutions" rel="me">GitHub (@softechpro-solutions)</a> ·
+        <a href="https://gist.github.com/softechpro-solutions" rel="me">Gists</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

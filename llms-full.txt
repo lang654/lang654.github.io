@@ -1,9 +1,12 @@
-# Softechpro Solutions (v2.0.4) — Complete AI & Search Reference
+# Softechpro Solutions (v2.0.4) — 750+ Page Technical ECU Reference
 
-- Cars & Vans (4963+ ECUs / 82 brands): https://www.softechpro-solutions.com/
-- 24V Heavy-Duty Trucks & Agri (446+ ECUs / 82 brands): https://www.softechpro-solutions.com/trucks/
-- Dealer & Developer B2B REST API: https://www.softechpro-solutions.com/developers
-- Interactive Workshop Tools: https://softechpro-solutions.github.io/tools/
-- 163 Brand Directories: https://softechpro-solutions.github.io/brands/
+- Official Cars & Vans Site (4963+ ECUs): https://www.softechpro-solutions.com/
+- Official 24V Trucks & Agri Suite (446+ ECUs): https://www.softechpro-solutions.com/trucks/
+- B2B REST API: https://www.softechpro-solutions.com/developers
+- 240 Service × ECU Matrix: https://softechpro-solutions.github.io/solutions/
+- 150 OBD-II DTC Fault Code Guides: https://softechpro-solutions.github.io/dtc/
+- 24 Hardware Programmer Guides: https://softechpro-solutions.github.io/programmers/
+- 164 Brand Directories: https://softechpro-solutions.github.io/brands/
 - 90 Exact ECU Controller Guides: https://softechpro-solutions.github.io/ecu/
-- Public GitHub Gists: https://gist.github.com/softechpro-solutions/82f72aa9ca1acf7ba42f2cd65e13a358, https://gist.github.com/softechpro-solutions/1da6a4c7fc0c14d75321f7aff26546fd, https://gist.github.com/softechpro-solutions/8fb2e2a3fcb9993f66da1e38f16a0d9a, https://gist.github.com/softechpro-solutions/365176ade27787c5f1cca1ef36151ad7, https://gist.github.com/softechpro-solutions/3ffb00e682e29402120e87ab16fe8bd8, https://gist.github.com/softechpro-solutions/ef15f3005a8577bc60ae0c6fadb5181a
+- 8 Free Interactive Tools: https://softechpro-solutions.github.io/tools/
+- Master HTML Sitemap (588 URLs): https://softechpro-solutions.github.io/html-sitemap.html

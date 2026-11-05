@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Softechpro Solutions B2B ECU Calibration REST API",
+    "version": "2.0.4",
+    "description": "Automated B2B ECU analysis, DPF/EGR/AdBlue/DTC calibration, Stage 1 remapping & checksum API for tuning portals and master dealers.",
+    "contact": {
+      "name": "Softechpro Engineering Team",
+      "url": "https://www.softechpro-solutions.com/developers",
+      "email": "support@softechpro-solutions.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://www.softechpro-solutions.com/api/v1",
+      "description": "Production B2B Cloud Engine"
+    }
+  ],
+  "paths": {
+    "/coverage": {
+      "get": {
+        "summary": "Query live supported Car & 24V Truck ECU catalog (5,409+ controllers)"
+      }
+    },
+    "/analyze": {
+      "post": {
+        "summary": "Upload 100% virgin stock .bin readout to detect ECU family, SW & supported modules"
+      }
+    },
+    "/calibrate": {
+      "post": {
+        "summary": "Apply selected emissions (DPF/EGR/AdBlue/DTC) or Stage 1 modules and return checksum-verified binary"
+      }
+    }
+  }
+}
